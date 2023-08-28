@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Colors in a box</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.box1{
+    background-color: red;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 100px auto;
+    width: 50%;
+}
+
+.box2{
+    background-color: green;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.box3{
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.box4{
+    display: grid;
+    grid-template-areas: 
+    'grid1'
+    'grid2'
+    'grid3';
+
+    gap: 7px;
+    padding: 7px;
+}
+
+.grid{
+    border: 1px solid black;
+    padding: 15px;
+    background-color: skyblue;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="box1">
+        <div class="box2">
+            <div class="box3">
+                <div class="box4">
+                  <div class="grid grid1"></div>
+                  <div class="grid grid2"></div>
+                  <div class="grid grid3"></div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-containers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 400px;
+  
+}
+.flex-item-top {
+  background-color: red;
+  padding: 30px;
+  flex: 100%;
+}
+.flex-item-down {
+  background-color: skyblue;
+  padding: 30px;
+  flex: 100%;
+}
+
+.flex-item-left {
+  background-color: purple;
+  padding: 30px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: green;
+  padding: 30px;
+  flex: 50%;
+}
+
+.flex-item-tops {
+  background-color: red;
+  padding: 30px;
+  flex:100%;
+}
+.flex-item-downs {
+  background-color: green;
+  padding: 30px;
+  flex: 100%;
+}
+
+.flex-item-lefts {
+  background-color: blue;
+  padding: 30px;
+  flex: 50%;
+}
+
+.flex-item-rights {
+  background-color: purple;
+  padding: 30px;
+  flex: 50%;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left, .flex-item-top, .flex-item-down {
+    flex: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item-top"></div>
+    <div class="flex-item-down"></div> 
+    <div class="flex-item-left"></div>
+    <div class="flex-item-right"></div><br>
+  <div class="flex-containers">
+    <div class="flex-item-tops"></div>
+    <div class="flex-item-downs"></div> 
+    <div class="flex-item-lefts"></div>
+    <div class="flex-item-rights"></div>
+  </div>
+</div>
+</body>
+</html>
+
+
